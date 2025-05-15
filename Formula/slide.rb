@@ -5,20 +5,20 @@
 class Slide < Formula
   desc "Slide CLI"
   homepage "https://github.com/jdel/slide"
-  version "0.0.2"
+  version "0.0.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jdel/slide/releases/download/v0.0.2/slide-0.0.2-darwin-amd64.zip"
-      sha256 "e970e7f4643882e7d11864a013fa941fc4316d327beee502525908f51f84f8d6"
+      url "https://github.com/jdel/slide/releases/download/v0.0.3/slide-0.0.3-darwin-amd64.zip"
+      sha256 "b788848ec858f55d12517353d8a5ffffa542b8d914b8c88b0635938385f15299"
 
       def install
         bin.install "slide"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jdel/slide/releases/download/v0.0.2/slide-0.0.2-darwin-arm64.zip"
-      sha256 "9f90eef98b718e756431b575fd0020ec13bdb9812a5943cc9bd057fc0c4e4e38"
+      url "https://github.com/jdel/slide/releases/download/v0.0.3/slide-0.0.3-darwin-arm64.zip"
+      sha256 "f2171a1117cbdda6e99f3895da0f33f85bc9bce9953e7f48ac5112b7c2569314"
 
       def install
         bin.install "slide"
@@ -28,22 +28,22 @@ class Slide < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/jdel/slide/releases/download/v0.0.2/slide-0.0.2-linux-amd64.zip"
-      sha256 "4422f07bc79ebd2502fd6e2c9d33719fa7623a8138d93b163d8432c5e3c9816a"
+      url "https://github.com/jdel/slide/releases/download/v0.0.3/slide-0.0.3-linux-amd64.zip"
+      sha256 "1ba4d5b211c1b9f1619dfbd9692a24a2df9e272bcc9a7b4677e02bff4b51c027"
       def install
         bin.install "slide"
       end
     end
     if Hardware::CPU.arm? and !Hardware::CPU.is_64_bit?
-      url "https://github.com/jdel/slide/releases/download/v0.0.2/slide-0.0.2-linux-arm6.zip"
-      sha256 "41aa4096ffc863b1fee19bf844712ebd0b95d88e0e25cd11da3ea2e6639d1990"
+      url "https://github.com/jdel/slide/releases/download/v0.0.3/slide-0.0.3-linux-arm6.zip"
+      sha256 "e74e6bb525efd58eb46ab053ebd69a03ae917c21c980aa1088ceae3cf6ff650f"
       def install
         bin.install "slide"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/jdel/slide/releases/download/v0.0.2/slide-0.0.2-linux-arm64.zip"
-      sha256 "ee46ce730cdb781ddb954e4ce18bc912fbe87497adebbd745d3b2bcfa30aacd7"
+      url "https://github.com/jdel/slide/releases/download/v0.0.3/slide-0.0.3-linux-arm64.zip"
+      sha256 "92515c13d47501ed8e2d6abc2c7edc51478eb145eaea5496f0f1dbe238c6c550"
       def install
         bin.install "slide"
       end
