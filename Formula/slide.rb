@@ -5,22 +5,22 @@
 class Slide < Formula
   desc "Slide CLI"
   homepage "https://github.com/jdel/slide"
-  version "0.0.4"
+  version "0.0.5"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jdel/slide/releases/download/v0.0.4/slide-0.0.4-darwin-amd64.zip"
-      sha256 "99c24f345ec6e50a6dffd456211b644fa9be411aadbfbb58e4178621175f5952"
+      url "https://github.com/jdel/slide/releases/download/v0.0.5/slide-0.0.5-darwin-amd64.zip"
+      sha256 "c161635608278741d1c3788d3614dfb46190f3102f3104f3e9f582e85cb13530"
 
-      def install
+      define_method(:install) do
         bin.install "slide"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jdel/slide/releases/download/v0.0.4/slide-0.0.4-darwin-arm64.zip"
-      sha256 "4193120bb71c6e89eac438b8e3de1ed243a58925c3e1dec08937393524ba8ca5"
+      url "https://github.com/jdel/slide/releases/download/v0.0.5/slide-0.0.5-darwin-arm64.zip"
+      sha256 "61abc9a4984e54cb7cd47c14d61b75b7b7c2bcbb8ac9b6007527fca285c2ee57"
 
-      def install
+      define_method(:install) do
         bin.install "slide"
       end
     end
@@ -28,23 +28,23 @@ class Slide < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jdel/slide/releases/download/v0.0.4/slide-0.0.4-linux-amd64.zip"
-      sha256 "cbd282b074e33cde9eded856a08e5ca8aed30b4aa87a8f130f4cee2bd80114b5"
-      def install
+      url "https://github.com/jdel/slide/releases/download/v0.0.5/slide-0.0.5-linux-amd64.zip"
+      sha256 "084ce9dc243d4005e6020e6eaa9a186d670367e5b57303d671123285178d1519"
+      define_method(:install) do
         bin.install "slide"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/jdel/slide/releases/download/v0.0.4/slide-0.0.4-linux-arm6.zip"
-      sha256 "03ee391237b53eb66a4ed8e004232b047ad807faece8ea5c859c34a54c1a2aed"
-      def install
+      url "https://github.com/jdel/slide/releases/download/v0.0.5/slide-0.0.5-linux-arm6.zip"
+      sha256 "d1f9cf0f8568ab67bdde2cff7145354cfbac1fa2fa486069427381529ba326d9"
+      define_method(:install) do
         bin.install "slide"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jdel/slide/releases/download/v0.0.4/slide-0.0.4-linux-arm64.zip"
-      sha256 "e5c86f88c9e0709b2a6c7e5ace61a4a1384b52d8474675194d4f06a09e882085"
-      def install
+      url "https://github.com/jdel/slide/releases/download/v0.0.5/slide-0.0.5-linux-arm64.zip"
+      sha256 "39919497672daf5393d51a88c2c7b4d6eff16a86b8cd5ef00bc6088791c47450"
+      define_method(:install) do
         bin.install "slide"
       end
     end
