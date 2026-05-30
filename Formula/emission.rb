@@ -5,20 +5,20 @@
 class Emission < Formula
   desc "Spoof BitTorrent tracker announces to boost your ratio"
   homepage "https://github.com/jdel/emission"
-  version "0.1.1"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jdel/emission/releases/download/v0.1.1/emission-0.1.1-darwin-amd64.tar.gz"
-      sha256 "2df58116345218c03813cdeb1bff674dfca79e88159819710a40437827c50a7c"
+      url "https://github.com/jdel/emission/releases/download/v0.2.0/emission-0.2.0-darwin-amd64.tar.gz"
+      sha256 "6582d4e67037741ca13b9cbcbb1429c5a50522dbcac1c6d2174a62ace1c80ca6"
 
       define_method(:install) do
         bin.install "emission"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jdel/emission/releases/download/v0.1.1/emission-0.1.1-darwin-arm64.tar.gz"
-      sha256 "fecca44eff549566d9da4b77db2f2efc0244e42f077d2c2d87450fae3fc830a0"
+      url "https://github.com/jdel/emission/releases/download/v0.2.0/emission-0.2.0-darwin-arm64.tar.gz"
+      sha256 "d2ab20f0f94d7d37042776cdea8b2407ec628467fb4980367c3956c41da0df2e"
 
       define_method(:install) do
         bin.install "emission"
@@ -28,15 +28,15 @@ class Emission < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jdel/emission/releases/download/v0.1.1/emission-0.1.1-linux-amd64.tar.gz"
-      sha256 "2b667af3d004474391509525519716d3a2db6de554d2616ff2fca54cf7389645"
+      url "https://github.com/jdel/emission/releases/download/v0.2.0/emission-0.2.0-linux-amd64.tar.gz"
+      sha256 "b1ef7416755bda0ea55f7e455526c03f160ff94cb7ab8378db20b164122bd381"
       define_method(:install) do
         bin.install "emission"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jdel/emission/releases/download/v0.1.1/emission-0.1.1-linux-arm64.tar.gz"
-      sha256 "b6a02b1d5ae8d2dd201b2d3034c8ae0c40297c8936aaf9d80977413f66eb37ed"
+      url "https://github.com/jdel/emission/releases/download/v0.2.0/emission-0.2.0-linux-arm64.tar.gz"
+      sha256 "492afc5b78c538d12e9c5840faeaa979306843f4d47ac8adaee965d15c9ca8bb"
       define_method(:install) do
         bin.install "emission"
       end
