@@ -4,12 +4,12 @@ cask "emission" do
 
   on_macos do
     on_intel do
-      sha256 "e357e76f2cfd3df3dfdac77e8d206b24ccbf63b89244528a21a32be828fbfe81"
+      sha256 "fe6536c55aaf884bd0cc17a6197e372f6673c7f6222ca7af5da20dbdf6c1e8ba"
       url "https://github.com/jdel/emission/releases/download/v#{version}/emission-#{version}-darwin-amd64.tar.gz",
         verified: "github.com/jdel/emission/"
     end
     on_arm do
-      sha256 "34f4fe23bc2e995ae836eb473723518f36f49aca3c27c094204eadd7ab9aa1ea"
+      sha256 "9fd6bf98a7d891c3932fe286dbb100acf8013d7ba38f888c212b953d0717b13a"
       url "https://github.com/jdel/emission/releases/download/v#{version}/emission-#{version}-darwin-arm64.tar.gz",
         verified: "github.com/jdel/emission/"
     end
@@ -17,12 +17,12 @@ cask "emission" do
 
   on_linux do
     on_intel do
-      sha256 "5ed095556f3a29b18940459fcc71abce0bcd1b28f0599ec28298c019229d9d00"
+      sha256 "6fa148d464e42da8ab38f6538942e38e0e9f4361dffb05398d4824eaa5fcb1f9"
       url "https://github.com/jdel/emission/releases/download/v#{version}/emission-#{version}-linux-amd64.tar.gz",
         verified: "github.com/jdel/emission/"
     end
     on_arm do
-      sha256 "c5903102225fa37bd0c163e50d9dbaebd4e78461345b43e3510b617cd670dd74"
+      sha256 "f0125ddc6dd66afdee1e32f43ccd8af5ae7f9dfe617e59b357947d8a77ded96c"
       url "https://github.com/jdel/emission/releases/download/v#{version}/emission-#{version}-linux-arm64.tar.gz",
         verified: "github.com/jdel/emission/"
     end
