@@ -1,6 +1,6 @@
 cask "emission-desktop" do
-  version "0.3.3"
-  sha256 "4c2da685760508bfc77c295098f047f9dc1a9e73212e7910ac29c95e5639b113"
+  version "0.4.0"
+  sha256 "3c375393a5aa7e03237eb79a0baa6f20029eabe934629cac2b904d7b55fbd6e4"
 
   url "https://github.com/jdel/emission/releases/download/v#{version}/Emission_#{version}_macos.zip",
       verified: "github.com/jdel/emission/"
