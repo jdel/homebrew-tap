@@ -1,6 +1,6 @@
 cask "stemlift" do
   version "0.1.0"
-  sha256 "0de46b80d48f80fb7aee0697a1a3d4bc9ed30b0ac30a9dab5bf228f9b5c14f2a"
+  sha256 "ecd463fd651bfb53067c508bdd0fbd714c96fee56d7ae5b6d4a19d48e4e0d456"
 
   url "https://github.com/jdel/StemLift/releases/download/v#{version}/stemlift-#{version}-darwin-arm64.tar.gz",
       verified: "github.com/jdel/StemLift/"
