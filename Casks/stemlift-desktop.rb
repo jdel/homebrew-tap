@@ -1,6 +1,6 @@
 cask "stemlift-desktop" do
   version "0.1.0"
-  sha256 "0436f60fa8786d1549efebac9c57ffb9cb0c3a69ad3ad95c7ef4fd49fee22856"
+  sha256 "81b63e8b76d8830a9ac9434b1689701ffdb8aa8cb551c06622e3bfbd77d0ca6c"
 
   url "https://github.com/jdel/StemLift/releases/download/v#{version}/StemLift_#{version}_macos.zip",
       verified: "github.com/jdel/StemLift/"
