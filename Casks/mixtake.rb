@@ -1,6 +1,6 @@
 cask "mixtake" do
-  version "0.0.1"
-  sha256 "5697a6e37d9a339853c3375f90c37cfc8dd3a69556f6ce85beea9d3a89b14eac"
+  version "0.1.0"
+  sha256 "20f8045b1fa6d5adf8bd54a9c5220e4ad77e84f09fd80f646c9c4041f27f0c4e"
 
   url "https://github.com/jdel/MixTake/releases/download/v#{version}/MixTake_#{version}_macos.zip",
       verified: "github.com/jdel/MixTake/"
