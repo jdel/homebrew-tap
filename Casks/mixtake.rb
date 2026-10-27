@@ -1,12 +1,12 @@
 cask "mixtake" do
   version "0.0.1"
-  sha256 "346374f85a9f4001aa659e1cacafb6eb9efe3e2387ef7bf56c980863d26b2799"
+  sha256 "5697a6e37d9a339853c3375f90c37cfc8dd3a69556f6ce85beea9d3a89b14eac"
 
-  url "https://github.com/jdel/CoverRecorder/releases/download/v#{version}/MixTake_#{version}_macos.zip",
-      verified: "github.com/jdel/CoverRecorder/"
+  url "https://github.com/jdel/MixTake/releases/download/v#{version}/MixTake_#{version}_macos.zip",
+      verified: "github.com/jdel/MixTake/"
   name "MixTake"
   desc "Record video with multichannel Core Audio and live Audio Unit effects"
-  homepage "https://github.com/jdel/CoverRecorder"
+  homepage "https://github.com/jdel/MixTake"
 
   depends_on arch: :arm64
   app "MixTake.app"
